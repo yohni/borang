@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'M-bold';
+  src: url('../fonts/Montserrat/Montserrat-Black.ttf');
+}
+
+@font-face {
+  font-family: 'M-Light';
+  src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+.logoB{
+  height: 54px;
+  margin: auto 5px;
+}
+
+nav .container{
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+.navbar-brand, li.nav-item a{
+  font-family: 'M-Light';
+  font-size: 15px;
+  opacity: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.navbar-brand{
+  font-family: 'M-bold';
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.navbar{
+  height: 70px;
+  z-index: 10;
+}
+
+.bgku{
+  background-color: rgba(255, 0, 0, 0);
+}
+
+@media screen and (max-width:988px){
+  .navbar{
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px){}
+.container {
+    max-width: 1000px;
+}
+
+@media screen and (max-width:990px) {
+  .navbar{
+    padding: 0px;
+    margin-top: 0px;
+  }
+}
+
+.headtext{
+  letter-spacing: 6px;
+  color: #fff;
+}
+
+.subheadline{
+  font-family: 'Montserrat';
+  font-size: 17px;
+  text-transform: none;
+  color: #fff;
+}
+
+header{
+  position: relative;
+  top:-70px;
+  width: 100%;
+  height: 780px;
+  font-family: 'M-bold';
+
+  background: url('../assets/wave.png');
+  background-position:bottom;
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.bg2{
+    background: url('../assets/header.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 724px;
+}
+
+
+.headline{
+  position: relative;
+  top: 250px;
+  text-align: left;
+  text-transform:uppercase;
+
+}
+
+.getStart{
+  padding: 7px 35px;;
+  border: 2px solid #fff;
+  border-radius:25px;
+  color: #fff;
+  background: rgba(255, 0, 0, 0);
+}
+
+.getStart a{
+  color: #fff;
+}
+
+.getStart a:hover{
+  color: #f1f1f1;
+}
+
+.navbar-toggler{
+  color: #fff;
+  background: #fff;
+}
+
+
+
+.navbar-toggler-icon{
+  color: #000;
+
+  border-color: #fff;
+  border-radius: 5px;
+}
+
+
+button.getStart:hover{
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.center{
+  text-align: center;
+}
+.title-section{
+
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'M-bold';
+}
+
+.bar-section{
+  text-align: center;
+  font-weight: 900;
+  width: 50px;
+  height: 4px;
+  background: #000;
+  margin-bottom: 130px;
+}
+
+/*OFFER STYLE*/
+.offer{
+  padding-bottom: 10px;
+  margin-bottom: 180px;
+}
+.bottom{
+  margin-bottom: 20px;
+}
+
+.iconOffer{
+  height: 150px;
+  padding:0 auto;
+}
+
+.textOffer{
+  font-family: 'open-sans';
+  margin-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 100px;
+  font-size: 18px;
+}
+
+.textOffer p{
+  font-size: 15px;
+}
+
+.more{
+  font-size: 16px;
+  text-transform: uppercase;
+}
