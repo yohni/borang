@@ -299,7 +299,6 @@ div.post:hover .post-more-details{
     min-height: 100%;
   }
   .navbar-toggler{
-    position: fixed;
     right: 15px;
     z-index: 2;
     top: 20px;
