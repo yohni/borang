@@ -136,6 +136,8 @@ nav#navigation .container{
   }
 }
 
+/*HEADER*/
+
 .headtext{
   font-family: 'M-bold';
   letter-spacing: 6px;
@@ -164,6 +166,12 @@ header{
   top: 250px;
   text-align: left;
   text-transform:uppercase;
+}
+
+@media screen and (max-width:469px){
+    .headline{
+        top: 150px;
+    }
 }
 
 .navbar-toggler.collapsed .navbar-toggler-icon,
@@ -202,6 +210,15 @@ header{
   font-size: 18px;
   margin-bottom: 1em;
   font-weight: 800;
+}
+
+@media screen and (max-width:392px){
+    .textOffer{
+        height: 125px;
+    }
+    section.offer .col-sm-12{
+        margin-bottom: 60px;
+    }
 }
 
 .learn-more{
