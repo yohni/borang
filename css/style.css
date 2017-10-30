@@ -285,7 +285,6 @@ div.post:hover .post-more-details{
 
 @media screen and (max-width:767px) {
   .navbar-collapse,.navbar-collapse.collapse{
-    position: fixed;
     left: 0;top:-100px;bottom: 0;right: 0;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 1;
