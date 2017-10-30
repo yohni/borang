@@ -170,7 +170,10 @@ header{
 
 @media screen and (max-width:469px){
     .headline{
-        top: 150px;
+        top: 160px;
+    }
+    header h1{
+        font-size: 30px;
     }
 }
 
