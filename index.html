@@ -7,64 +7,58 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/entypo-plus.css">
   <link rel="stylesheet" href="css/style.css">
-
-
-
-
-
   <title>Borang</title>
 </head>
-<body>
-
-
-  <nav class="navbar navbar-expand-lg  bgku">
+<body id="home">
+<nav id="navigation" class="navbar navbar-expand-md">
   <div class="container">
-    <a class="navbar-brand" href="#"><img class="logoB" src="assets/logo.png" alt=""><b>Borang</b></a>
+    <a class="navbar-brand" href="#">
+      <img class="logoB d-inline-block align-top" width="auto" height="30" src="assets/logo.png" alt="">
+      Borang
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Discover <span class="sr-only">(current)</span></a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item b-menu active  mr-md-2">
+          <a class="nav-link" href="#">Discover</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item b-menu mr-md-2">
           <a class="nav-link" href="#">Blog</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Log in</a>
+        <li class="nav-item b-menu  mr-md-2">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item b-menu  mr-md-2">
+          <a class="nav-link" href="#">Sign up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sign up</a>
+          <a href="#" class="nav-link">EN</a>
+        </li>
+        <li class="nav-item">
+          <span class="navbar-text text-muted">|</span>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">ID</a>
         </li>
     </div>
   </div>
 </nav>
 
 <header>
-  <!-- <img src="assets/wave.png" alt="" class="bg"> -->
-  <div class="bg2">
   <div class="container headline">
     <div class="row">
       <div class="col-md-8 col-sm-12 ">
+        <h1 class="headtext">NEW DEFINITION OF FINDING PARTICIPANTS</h1>
+        <p class="subheadline">Borang is Platform that brings togather people who need participants and participants</p>
+        <a href="#" class="btn btn-grad">GET STARTED</a>
 
-          <h1 class="headtext">
-            NEW DEFINITION OF FINDING PARTICIPANTS
-          </H1>
-          <p class="subheadline">Borang is Platform that brings togather people who need participants and participants</p>
-
-        <a href="#"><button type="button" name="button" class="getStart">GET STARTED</button></a>
-
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="headergam">
-
-        </div>
       </div>
     </div>
-  </div>
   </div>
 </header>
 <!-- section of offer -->
@@ -77,16 +71,14 @@
       <div class="col-md-6 col-sm-12 center">
         <div class="iconOffer"><img src="assets/humans.png" alt="humans_icon" class="center"></div>
         <div class="textOffer">
-          <h3>
+          <h4>
             Get Participants Quickly
-          </h3>
+          </h4>
           <p>
             Post your needs of participants for events, research, observation, rtc. You can also create quesioner by adding form in your post.
           </p>
         </div>
-        <div class="more">
-          <a href="#" class="more">learn more</a>
-        </div>
+        <a href="#" class="learn-more">learn more &rarr;</a>
 
       </div>
       <div class="col-md-6 col-sm-12 center">
@@ -94,16 +86,14 @@
           <img src="assets/books.png" alt="book_icon" class="bottom">
         </div>
         <div class="textOffer">
-          <h3>
+          <h4>
             Be A Participant and Get Reward
-          </h3>
+          </h4>
           <p>
             Be a participant in events, research, observation, surveys, etc and get reward
           </p>
         </div>
-        <div class="more">
-          <a href="#" class="more">learn more</a>
-        </div>
+        <a href="#" class="learn-more">learn more &rarr;</a>
 
 
       </div>
@@ -111,50 +101,123 @@
   </div>
 </section>
 
-<section class="post">
+<section class="post-section">
   <div class="title-section">FEATURED POST</div>
   <hr class="bar-section">
   <div class="container">
     <div class="row">
-      <div class="card-group">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card post mb-3 mr-md-0" href="#">
+          <div class="post-head">
+            <img class="card-img-top post-img" src="assets/card1.jpg" alt="Card image cap">
+            <ul class="post-more-details">
+              <li class="detail-item  ml-3"><i class="icon-eye"></i> 45</li>
+              <li class="detail-item  ml-3"><i class="icon-users"></i> 5</li>
+              <li class="detail-item  ml-auto mr-3"><i class="icon-share-alternitive"></i></li>
+            </ul>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div class="card-body">
+            <h5 class="card-title post-title">"Smoking Efect Teraphy" Research</h5>
+            <small class="post-time-left"><strong>5 day 7 hour</strong> left to participate</small>
+            <ul class="list-unstyled post-details">
+              <li><i class="icon-users"></i>10 Participants</li>
+              <li><i class="icon-calendar"></i>Wed, Nov 8 2017 10:00 am</li>
+              <li><i class="icon-location-pin"></i>Faculty of Psychology, UGM, Yogyakarta</li>
+              <li><i class="icon-price-ribbon"></i>Merchandise + 5 <span class="bicon-coin"></span></li>
+            </ul>
+            <div class="d-flex flex-row justify-content-between">
+              <small class="text-muted">3 days ago</small>
+              <small class="text-muted"><a href="#">Participate &rarr;</a></small>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-4">
+        <div class="card post mb-3 ml-md-0" href="#">
+          <div class="post-head">
+            <img class="card-img-top post-img" src="assets/card2.jpg" alt="Card image cap">
+            <ul class="post-more-details">
+              <li class="detail-item  ml-3"><i class="icon-eye"></i> 45</li>
+              <li class="detail-item  ml-3"><i class="icon-users"></i> 5</li>
+              <li class="detail-item  ml-auto mr-3"><i class="icon-share-alternitive"></i></li>
+            </ul>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div class="card-body">
+            <h5 class="card-title post-title">"Smoking Efect Teraphy" Research</h5>
+            <small class="post-time-left"><strong>5 day 7 hour</strong> left to participate</small>
+            <ul class="list-unstyled post-details">
+              <li><i class="icon-users"></i>10 Participants</li>
+              <li><i class="icon-calendar"></i>Wed, Nov 8 2017 10:00 am</li>
+              <li><i class="icon-location-pin"></i>Faculty of Psychology, UGM, Yogyakarta</li>
+              <li><i class="icon-price-ribbon"></i>Merchandise + 5 <span class="bicon-coin"></span></li>
+            </ul>
+            <div class="d-flex flex-row justify-content-between">
+              <small class="text-muted">3 days ago</small>
+              <small class="text-muted"><a href="#">Participate &rarr;</a></small>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div><div class="col-md-12 col-sm-12 col-lg-4">
+        <div class="card post mb-3 m" href="#">
+          <div class="post-head">
+            <img class="card-img-top post-img" src="assets/card3.jpg" alt="Card image cap">
+            <ul class="post-more-details">
+              <li class="detail-item  ml-3"><i class="icon-eye"></i> 45</li>
+              <li class="detail-item  ml-3"><i class="icon-users"></i> 5</li>
+              <li class="detail-item  ml-auto mr-3"><i class="icon-share-alternitive"></i></li>
+            </ul>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div class="card-body">
+            <h5 class="card-title post-title">"Smoking Efect Teraphy" Research and what we observe yeay no thin</h5>
+            <small class="post-time-left"><strong>5 day 7 hour</strong> left to participate</small>
+            <ul class="list-unstyled post-details">
+              <li><i class="icon-users"></i>10 Participants</li>
+              <li><i class="icon-calendar"></i>Wed, Nov 8 2017 10:00 am</li>
+              <li><i class="icon-location-pin"></i>Faculty of Psychology, UGM, Yogyakarta</li>
+              <li><i class="icon-price-ribbon"></i>Merchandise + 5 <span class="bicon-coin"></span></li>
+            </ul>
+            <div class="d-flex flex-row justify-content-between">
+              <small class="text-muted">3 days ago</small>
+              <small class="text-muted"><a href="#">Participate &rarr;</a></small>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="center mt-3">
+      <a href="#" class="btn btn-grad">Browse More</a>
+    </div>
   </div>
 </section>
 
-
+<footer>
+  <div class="container">
+    <div class="footer-body d-flex flex-row justify-content-md-between justify-content-sm-center flex-wrap align-item-center align-content-between">
+      <div class="footer-brand d-inline-flex flex-row align-item-center mx-auto ml-md-0">
+        <img src="assets/logo.png" alt="Logo Borang" height="40">
+        <span>BORANG</span>
+      </div>
+      <ul class="footer-links d-inline-flex justify-content-center flex-wrap list-unstyled">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Term of Use</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <div class="footer-social d-inline-flex flex-row align-item-center mx-auto mr-md-0">
+        <a href="#"><i class="icon-facebook-with-circle"></i></a>
+        <a href="#"><i class="icon-twitter-with-circle"></i></a>
+        <a href="#"><i class="icon-instagram-with-circle"></i></a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <small class="text-muted">&copy; Copyright 2017 Borang &bullet; Made with <strong class="heart">&hearts;</strong> in DIY</small>
+    </div>
+  </div>
+</footer>
   <script src="js/codeJquery.js" charset="utf-8"></script>
   <script src="js/popper.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="js/borang.js" charset="utf-8"></script>  
 </body>
 </html>
