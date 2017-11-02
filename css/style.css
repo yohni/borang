@@ -518,6 +518,10 @@ footer .heart{
   .textOffer{
     height: 130px;
   }
+  .offer-icon{
+    width: 250px;
+    height: auto;
+  }
   #login .card.login{
     width: 350px;
   }
