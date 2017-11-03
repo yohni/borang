@@ -14,22 +14,23 @@
     <div class="wrapper">
       <div class="card login">
         <div class="card-body">
-          <div class="borang-logo"></div>
-          <div class="borang-brand text-center">
-            BORANG
+          <div class="login-head mb-5 d-flex flex-nowrap align-items-center justify-content-center">
+            <div class="borang-logo p-2"></div>
+            <div class="borang-brand text-center p-2 mt-0 pt-sm-4">
+              BORANG
+            </div>
           </div>
           <form id="login-form">
             <fieldset class="form-group">
-              <!-- <label for="username">Email address</label> -->
               <input type="text" class="form-control" id="username" placeholder="Username">
             </fieldset>
-            <fieldset class="form-group">
-              <!-- <label for="password">Password</label> -->
+            <fieldset class="form-group position-relative">
               <input type="password" class="form-control" id="password" placeholder="Password">
+              <button id="password-eye" type="button"><i class="icon-eye"></i></button>
             </fieldset>
             <div class="checkbox d-flex flex-row justify-content-between align-items-center">
-              <label>
-                <input type="checkbox"> Remember Me
+              <label class="d-flex">
+                <input type="checkbox" class="mr-1"> Remember Me
               </label>
               <a href="#" class="forgot-password">Forgot Password?</a>
             </div>
@@ -42,6 +43,39 @@
       </div>
     </div>
     <script src="js/codeJquery.js" charset="utf-8"></script>
-    <script src="js/borang.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#password-eye').click(function(event) {
+          console.log("yee");
+          var i=$(this).children('i');
+          var passfield=$('#password');
+          //if password hidden
+          if (i.hasClass('icon-eye')) {
+            i.attr('class','icon-eye-with-line');
+            passfield.attr('type','text');
+          }
+          //if password shown
+          else {
+            i.attr('class','icon-eye');
+            passfield.attr('type','password');
+          }
+        });
+
+        //login validation
+        const loginForm=$('#login-form');
+
+        $('#login-form input').blur(function(event) {
+          var value=$(this).val();
+          if (value=="") {
+            $(this).addClass('error');
+            return false;
+            event.preventDefault();
+          }
+          else {
+            $(this).removeClass('error');
+          }
+        });
+      });
+    </script>
   </body>
 </html>

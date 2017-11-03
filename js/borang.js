@@ -1,4 +1,27 @@
 $(document).ready(function() {
+  var offset=300,
+      scroll_top_duration=1000,
+      toTop=$('.back-top').first();
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop()>offset) {
+      if (!toTop.hasClass('visible')) {
+        toTop.addClass('visible');
+      }
+    }
+    else {
+      toTop.removeClass('visible');
+    }
+  });
+
+  toTop.click(function(event) {
+    // event.preventDefault();
+    console.log("ev");
+    $('html,body').stop().animate({
+      scrollTop: 0});
+    return false;
+  });
+
   setTimeout(function () {
     $('#preloader').addClass('done');
   }, 1000);
@@ -16,30 +39,16 @@ $(document).ready(function() {
     }
   });
 
-  //login validation
-  const loginForm=$('#login-form');
-
-  $('#login-form input').blur(function(event) {
-    var value=$(this).val();
-    if (value=="") {
-      $(this).addClass('error');
-      return false;
-      event.preventDefault();
-    }
-    else {
-      $(this).removeClass('error');
-    }
-  });
-
   var options = {
   strings: ["FINDING PARTICIPANTS", "Helping people","Making money"],
   typeSpeed: 90,
-  showCursor:false,  
+  showCursor:false,
   backSpeed:50,
   loop:true
   }
 
   $('#typing-line').text('');
   var typed = new Typed("#typing-line", options);
+
 
 });

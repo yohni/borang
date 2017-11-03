@@ -44,6 +44,33 @@ a{
   border: none;
   box-shadow: none;
 }
+.back-top{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #222;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+.back-top:hover{
+  text-decoration: none;
+}
+.back-top.visible{
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
 
 /* UNIVERSAL SECTION */
 section,.section{
@@ -393,17 +420,17 @@ footer .heart{
 
 #login{
   background-image: url('../assets/gradien.png'),url('../assets/background2.jpg');
-  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
   display: flex;
+  height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
 #login .card.login{
-  width: 300px;
+  width: 100%;
   border: none;
   padding: 1rem;
 }
@@ -411,25 +438,19 @@ footer .heart{
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 3px;
-  margin-top: 30px;
-  margin-bottom: 2rem;
 }
 #login .card.login .borang-logo{
-  width: 100px;
-  height: 100px;
   background-image: url('../assets/logo_300.png');
-  background-size: 95px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+  display: inline-block;
   background-size: cover;
-  position: absolute;
-  top: -50px;
-  left: 0;
-  right: 0;
-  margin: auto;
   border-radius: 50%;
-  border: 5px solid #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 #login .card.login .form-group input{
   border-radius: 0;
   border: none;
@@ -454,10 +475,18 @@ footer .heart{
 #login #login-form input.error{
   border-bottom-color: rgb(255, 38, 38);
 }
+#login #password-eye{
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 2em;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
 #login #login-form .checkbox{
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1rem;
   margin-bottom: 1rem;
-
 }
 #login .forgot-password{
   display: block;
@@ -570,8 +599,28 @@ footer .heart{
     min-width: 290px;
   }
 }
+@media screen and (min-width:576px){
+  #login .card.login .borang-logo{
+    background-size: 95px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 5px solid #fff;
+  }
+}
 @media screen and (min-width:1200px){
   .textOffer{
     height: 100px;
+  }
+}
+@media screen and (max-width:336px) {
+  #login .card.login{
+    position: fixed;
+    top: 0;
+    bottom: 0;left: 0;right: 0;
   }
 }
