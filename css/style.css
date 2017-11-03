@@ -252,6 +252,7 @@ header{
 
 section.offer{
   background-color: #fff;
+  margin-top: -2px;
 }
 
 .textOffer{
@@ -388,7 +389,7 @@ div.post:hover .post-more-details{
   transition: 0.2s all;
   transition-delay: 0.2s;
 }
-.logo-support:hover{
+.logo-support:hover,.logo-support:focus{
   -webkit-filter:greyscale(0%);
   filter: grayscale(0%);
   -webkit-transition-delay: 0s;

@@ -13,11 +13,11 @@ $(document).ready(function() {
       toTop.removeClass('visible');
     }
   });
-
-  toTop.click(function(event) {
-    // event.preventDefault();
-    console.log("ev");
-    $('html,body').stop().animate({
+  $('a[href="#"]').click(function(event) {
+    return false;
+  });
+  toTop.click(function(event) {    
+    $('html, body').animate({
       scrollTop: 0});
     return false;
   });
