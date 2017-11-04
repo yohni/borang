@@ -644,11 +644,3 @@ footer .heart{
   }
 }
 .revealOnScroll { opacity: 0; }
-.delay-2{
-  -webkit-animation-delay: 0.2s; /* Safari 4.0 - 8.0 */
-    animation-delay: 0.2s;
-}
-.delay-3{
-  -webkit-animation-delay: 0.3s; /* Safari 4.0 - 8.0 */
-    animation-delay: 0.3s;
-}

@@ -27,7 +27,6 @@ $(document).ready(function() {
   }, 1000);
   //Toggled menu on mobile screen
   $('#b-menu-toggler').click(function(event) {
-    console.log('c;');
     var target=$($(this).data('target'));
     if (target.hasClass('show')) {
       $(this).removeClass('opened');
@@ -50,5 +49,47 @@ $(document).ready(function() {
   $('#typing-line').text('');
   var typed = new Typed("#typing-line", options);
 
+  addAnimationData('.b-anim','fadeInUp','0');
 
+  function addAnimationData(elem, elemData, elemTimeout) {
+    $(elem).addClass("revealOnScroll").attr("data-animation",elemData).attr("data-timeout",elemTimeout);
+  }
+
+    var $window           = $(window),
+        win_height_padded = $window.height() * 1.1,
+        isTouch           = Modernizr.touch;
+
+    if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+    $window.on('scroll', revealOnScroll);
+
+    function revealOnScroll() {
+      var scrolled = $window.scrollTop(),
+          win_height_padded = $window.height()*1.25;
+
+      // Showed...
+      $(".revealOnScroll:not(.animated)").each(function () {
+        var $this     = $(this),
+            offsetTop = $this.offset().top;
+        if (scrolled + win_height_padded > offsetTop) {
+          if ($this.data('timeout')) {
+            window.setTimeout(function(){
+              $this.addClass('animated ' + $this.data('animation'));
+            }, parseInt($this.data('timeout'),10));
+          } else {
+            $this.addClass('animated ' + $this.data('animation'));
+          }
+        }
+      });
+      // Hidden...
+     $(".revealOnScroll.animated").each(function (index) {
+        var $this     = $(this),
+            offsetTop = $this.offset().top;
+        if (scrolled + win_height_padded < offsetTop) {
+          $(this).removeClass('animated fadeInUp flipInX lightSpeedIn ')
+        }
+      });
+    }
+
+    revealOnScroll();
 });
