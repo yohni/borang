@@ -222,7 +222,7 @@ header{
   width: 100%;
   height: 800px;
   background:  url('../assets/wave.png'),url('../assets/gradien.png'),url('../assets/background1.jpg');
-  background-position:bottom;
+  background-position:bottom center;
   background-attachment:scroll;
   background-repeat: no-repeat;
   background-size: 100%,cover,cover;
@@ -284,7 +284,7 @@ section.offer{
 /* FEATURED POST SECTION */
 
 .post-section{
-  background-color: #ececec;
+  background-color: #f1f1f1;
 }
 .post{
   -webkit-box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
@@ -522,6 +522,9 @@ footer .heart{
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 30 30" width="30" height="30"><defs><clipPath id="_clipPath_ziEn1zRSLRls6xdpcY6oEyRswcKsF57x"><rect width="30" height="30"/></clipPath></defs><g clip-path="url(%23_clipPath_ziEn1zRSLRls6xdpcY6oEyRswcKsF57x)"><path d=" M 15 13.586 L 8.088 6.674 C 7.61 6.196 6.905 6.124 6.515 6.515 C 6.124 6.905 6.196 7.61 6.674 8.088 L 13.586 15 L 6.674 21.912 C 6.196 22.39 6.124 23.095 6.515 23.485 C 6.905 23.876 7.61 23.804 8.088 23.326 L 15 16.414 L 21.912 23.326 C 22.39 23.804 23.095 23.876 23.485 23.485 C 23.876 23.095 23.804 22.39 23.326 21.912 L 16.414 15 L 23.326 8.088 C 23.804 7.61 23.876 6.905 23.485 6.515 C 23.095 6.124 22.39 6.196 21.912 6.674 L 15 13.586 Z " fill="rgb(255,255,255)"/></g></svg>');
   transition: background 0.3s;
 }
+#b-menu-toggler:focus{
+  outline: none;
+}
 #b-menu-wrapper.show .nav-link:hover{
   color: #ff5f6d;
   font-weight: bold;
@@ -564,9 +567,6 @@ footer .heart{
   }
   .subheadline{
     width: 600px;
-  }
-  .textOffer{
-    height: 130px;
   }
   .offer-icon{
     width: 250px;
@@ -619,6 +619,9 @@ footer .heart{
     max-width: 300px;
     min-width: 290px;
   }
+  header{
+    background-size: 160%,cover,cover;
+  }
 }
 @media screen and (min-width:576px){
   #login .card.login .borang-logo{
@@ -631,11 +634,6 @@ footer .heart{
     right: 0;
     margin: auto;
     border: 5px solid #fff;
-  }
-}
-@media screen and (min-width:1200px){
-  .textOffer{
-    height: 100px;
   }
 }
 @media screen and (max-width:336px) {
