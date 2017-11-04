@@ -16,7 +16,7 @@ $(document).ready(function() {
   $('a[href="#"]').click(function(event) {
     return false;
   });
-  toTop.click(function(event) {    
+  toTop.click(function(event) {
     $('html, body').animate({
       scrollTop: 0});
     return false;
